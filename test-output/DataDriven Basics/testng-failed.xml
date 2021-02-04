@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DataDriven Basics]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="listeners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Mirabel Add Contact Test(failed)">
+    <classes>
+      <class name="testcases.AddContact">
+        <methods>
+          <include name="Add_Contact" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.AddContact -->
+    </classes>
+  </test> <!-- Mirabel Add Contact Test(failed) -->
+</suite> <!-- Failed suite [DataDriven Basics] -->
